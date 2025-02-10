@@ -1,6 +1,7 @@
 package org.example;
 
-public class BadCodeExample {
+public class TestingImprovements {
+    //Comment method body to fix deep,nested complexity smell
     public void processEverything(String input1, String input2, String input3, String input4, String input5, String input6) {
         if (input1 != null) {
             if (input2.length() > 5) {
@@ -84,7 +85,10 @@ public class BadCodeExample {
                 }
             }
         }
-    }    private void ev3enMoreStrings(String arg) {
+    }
+
+    //Comment this method out to fix bumpy road ahead, code duplication and deep, nested complexity
+    private void ev3enMoreStrings(String arg) {
         if (arg.length() > 5) {
             for (int i = 0; i < 10; i++) {
                 if (i % 2 == 0) {
@@ -99,7 +103,7 @@ public class BadCodeExample {
     }
 
     public static void main(String[] args) {
-        BadCodeExample example = new BadCodeExample();
+        TestingImprovements example = new TestingImprovements();
         example.processEverything("Alpha", "Bravo", "Charlie", "Delta", "error", "specialCase");
     }
 }
